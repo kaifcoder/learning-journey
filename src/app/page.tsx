@@ -1,5 +1,7 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  return <Button>Hello learning journey</Button>;
+  const router = useRouter();
+  return router.replace("/gallery");
 }

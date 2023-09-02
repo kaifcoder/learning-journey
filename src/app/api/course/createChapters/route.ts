@@ -15,10 +15,10 @@ export async function POST(req: Request, res: Response) {
     if (!session?.user) {
       return new NextResponse("unauthorised", { status: 401 });
     }
-    const isPro = await checkSubscription();
-    if (session.user.credits <= 0 && !isPro) {
-      return new NextResponse("no credits", { status: 402 });
-    }
+    // const isPro = await checkSubscription();
+    // if (session.user.credits <= 0 && !isPro) {
+    //   return new NextResponse("no credits", { status: 402 });
+    // }
     const body = await req.json();
     const { title, units } = createChaptersSchema.parse(body);
 
@@ -80,7 +80,7 @@ export async function POST(req: Request, res: Response) {
     }
     await prisma.user.update({
       where: {
-        id: session.user.id,
+        id: session?.user.id,
       },
       data: {
         credits: {

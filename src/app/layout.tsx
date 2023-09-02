@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Lexend({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <body className={cn(inter.className, "antialiased min-h-screen pt-16")}>
           <Navbar />
           {children}
+          <Toaster />
         </body>
       </ThemeProvider>
     </html>
