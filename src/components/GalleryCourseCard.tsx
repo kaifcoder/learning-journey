@@ -22,12 +22,12 @@ const GalleryCourseCard = async ({ course }: Props) => {
           >
             <Image
               src={course.image || ""}
-              className="object-cover w-full max-h-[300px] rounded-t-lg"
+              className="object-cover w-full max-h-[200px] rounded-t-lg"
               width={300}
-              height={300}
+              height={200}
               alt="picture of the course"
             />
-            <span className="absolute px-2 py-1 text-white rounded-md bg-black/60 w-fit bottom-2 left-2 right-2">
+            <span className="absolute px-1 py-1 text-white rounded-md bg-black/60 w-fit bottom-2 left-2 right-1">
               {course.name}
             </span>
           </Link>

@@ -1,10 +1,8 @@
 // /api/chapter/getInto
 
 import { prisma } from "@/lib/db";
-import { strict_output } from "@/lib/gpt";
 import {
- 
-  getTranscript,
+
   searchYoutube,
 } from "@/lib/youtube";
 import { NextResponse } from "next/server";
@@ -36,26 +34,14 @@ export async function POST(req: Request, res: Response) {
       );
     }
     const videoId = await searchYoutube(chapter.youtubeSearchQuery);
-    console.log(chapter.youtubeSearchQuery, videoId);
-    let transcript = await getTranscript(videoId);
-    let { summary }: { summary: string } = { summary: "summary of the transcript" };
-  try {
-      summary = await strict_output(
-        "You are an AI capable of summarising a youtube transcript",
-        "summarise in 250 words or less and do not talk of the sponsors or anything unrelated to the main topic, also do not introduce what the summary is about.\n" +
-          transcript,
-        { summary: "summary of the transcript" }
-      );
   
-  } catch (error) {
-      summary = transcript;
-  } 
 
+    // let transcript = await getTranscript(videoId);
     await prisma.chapter.update({
       where: { id: chapterId },
       data: {
         videoId: videoId,
-        summary: summary,
+        summary: "Feature coming soon",
       },
     });
 
