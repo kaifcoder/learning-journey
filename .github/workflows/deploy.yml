@@ -22,7 +22,7 @@ jobs:
           echo "Deploying to EC2"
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${{ secrets.USER_NAME }}@${{ secrets.SSH_HOST }} '
-          cd /root/learning-journey-yt &&
+          cd /root/learning-journey &&
           git reset --hard &&
           git checkout main &&
           git pull origin main &&
