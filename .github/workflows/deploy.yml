@@ -24,8 +24,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${{ secrets.USER_NAME }}@${{ secrets.SSH_HOST }} '
           cd /root/learning-journey &&
           git reset --hard &&
-          git checkout main &&
-          git pull origin main &&
+          git checkout master &&
+          git pull origin master &&
           docker-compose down &&
           docker-compose rm -fsv &&
           docker-compose up --build -d
