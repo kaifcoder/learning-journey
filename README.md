@@ -4,7 +4,9 @@
 
 ### Learning Journey is a web app that helps you learn and create your own online courses with the help of AI
 
-![image](https://github.com/kaifcoder/learning-journey/assets/57701861/fbb90d38-07be-4f33-9371-4fc418f8fffa)
+# Demo Video
+
+https://github.com/kaifcoder/learning-journey/assets/57701861/759eee21-2696-4085-8e33-774f1332f4b9
 
 ## Features
 
@@ -55,6 +57,10 @@ To use this app, you need to create an account or log in with an existing one. T
 - `/course/[courseID]`: This is where you can watch the courses that available.
 - `/settings`: This is where you can see and edit your pro subscription.
 
-## Contact
+## Disclaimer
 
-If you have any questions or feedback, please feel free to contact me at <kaifmohd2014@gmail.com>. I would love to hear from you. 😊
+Learning Journey is a prototype web app that uses OpenAI's API & Youtube API to power the AI assistant. The app is not affiliated with OpenAI or Google. The app is for demonstration and knowledge purposes only and does not guarantee the accuracy, quality, or suitability of the responses. The app may not work properly on some devices or browsers. The app may stop working at any time due to API limitations or other reasons.
+
+## Feedback
+
+If you have any feedback, suggestions, or issues with the app, please contact me at kaifmohd2014@gmail.com. I would love to hear from you and improve the app. Thank you for using Learning Journey! 😊
