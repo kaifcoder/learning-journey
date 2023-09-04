@@ -1,8 +1,8 @@
 # Learning Journey
 
-### **Live link** : https://172-105-59-191.ip.linodeusercontent.com/gallery
+## **Live link** : <https://172-105-59-191.ip.linodeusercontent.com/gallery>
 
-#### Learning Journey is a web app that helps you learn and create your own online courses with the help of AI.
+### Learning Journey is a web app that helps you learn and create your own online courses with the help of AI
 
 ![image](https://github.com/kaifcoder/learning-journey/assets/57701861/fbb90d38-07be-4f33-9371-4fc418f8fffa)
 
@@ -20,7 +20,7 @@
 - **OpenAIAPI**: The OpenAI API is a platform that allows you to access a variety of AI models for natural language, code, image, and speech tasks.
 - **Youtube data api**: An API provided by google to query the data available on youtube.
 - **Prisma**: Prisma is a platform for building data-driven applications with Node.js and TypeScript.
-- **Docker** (For Deployment): Docker is a popular platform that allows you to create, deploy, and run applications using containers. 
+- **Docker** (For Deployment): Docker is a popular platform that allows you to create, deploy, and run applications using containers.
   
 ## Installation
 
@@ -57,4 +57,4 @@ To use this app, you need to create an account or log in with an existing one. T
 
 ## Contact
 
-If you have any questions or feedback, please feel free to contact me at kaifmohd2014@gmail.com. I would love to hear from you. 😊
+If you have any questions or feedback, please feel free to contact me at <kaifmohd2014@gmail.com>. I would love to hear from you. 😊
