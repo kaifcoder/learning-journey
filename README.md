@@ -1,7 +1,5 @@
 # Learning Journey
 
-## **Live link** : <https://172-105-59-191.ip.linodeusercontent.com/gallery>
-
 ### Learning Journey is a web app that helps you learn and create your own online courses with the help of AI
 
 # Demo Video
